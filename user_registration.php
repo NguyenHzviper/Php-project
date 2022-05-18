@@ -216,7 +216,7 @@ if(isset($_POST["register_button"]))
 						<tr style="margin:0">
 							<td style="vertical-align:top;margin:0;padding:0 0 20px;font-size:14px" valign="top">
 								<p style="margin:0"><strong>Details:</strong></p>
-								<p style="margin:0">This is a verification email, please click the link to verify your email address.</p>
+								<p style="margin:0">This is a verification email, please click the button to verify your email address.</p>
 							</td>
 						</tr>
 						<tr style="margin:0">
