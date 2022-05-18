@@ -201,11 +201,33 @@ if(isset($_POST["register_button"]))
 			$mail->Subject = 'Registration Verification for Library Management System';
 
 			$mail->Body = '
-			 <p>Thank you for registering for Library Management System Demo & your Unique ID is <b>'.$user_unique_id.'</b> which will be used for issue book.</p>
-
-                <p>This is a verification email, please click the link to verify your email address.</p>
-                <p><a href="'.base_url().'verify.php?code='.$user_verificaton_code.'">Click to Verify</a></p>
-                <p>Thank you...</p>
+			<table width="100%" cellpadding="0" cellspacing="0" style="border-radius:5px;background-color:#fff;margin:0" bgcolor="#ffffff">
+			<tbody><tr style="margin:0">
+				
+			</tr>
+			<tr style="margin:0">
+				<td style="vertical-align:top;margin:0;padding:15px 25px 20px 25px" valign="top">
+					<table width="100%" cellpadding="0" cellspacing="0" style="margin:0">
+						<tbody><tr style="margin:0">
+							<td style="vertical-align:top;margin:0;padding:0 0 20px" valign="top">
+							   <strong>Thank you for registering for Library Management System Demo & your Unique ID is <b>'.$user_unique_id.'</b> which will be used for issue book.</strong>
+							</td>
+						</tr>
+						<tr style="margin:0">
+							<td style="vertical-align:top;margin:0;padding:0 0 20px;font-size:14px" valign="top">
+								<p style="margin:0"><strong>Details:</strong></p>
+								<p style="margin:0">This is a verification email, please click the link to verify your email address.</p>
+							</td>
+						</tr>
+						<tr style="margin:0">
+							<td style="vertical-align:top;margin:0;padding:0 0 20px" valign="top">
+							<a href="'.base_url().'verify.php?code='.$user_verificaton_code.'" style="font-size:18px;color:#fff;text-decoration:none;line-height:2em;font-weight:bold;display:inline-block;border-radius:6px;text-transform:capitalize;background-color:#0d6ef5;margin:0;border-color:#0d6ef5;border-style:solid;border-width:10px 30px" target="_blank">Click to Verify</a>
+							</td>
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+		</tbody></table>
 			';
 
 			$mail->send();
