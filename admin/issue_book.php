@@ -587,10 +587,10 @@ include '../header.php';
         				{
         					$current_date_time = new DateTime(get_date_time($connect));
         					$expected_return_date = new DateTime($row["expected_return_date"]);
-
-        					if($current_date_time > $expected_return_date)
+                            $issue_date_time = new DateTime($row["issue_date_time"]); 
+        					if($current_date_time > $issue_date_time)
         					{
-        						$interval = $current_date_time->diff($expected_return_date);
+        						$interval = $issue_date_time->diff($current_date_time);
 
         						$total_day = $interval->d;
 
