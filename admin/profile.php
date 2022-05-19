@@ -66,7 +66,7 @@ if(isset($_POST['edit_admin']))
 
 		$statement->execute($data);
 
-		$message = 'User Data Edited';
+		$message = 'Admin Data Edited';
 	}
 }
 
@@ -125,7 +125,7 @@ include '../header.php';
 							<input type="password" name="admin_password" id="admin_password" class="form-control" value="<?php echo $row['admin_password']; ?>" />
 						</div>
 						<div class="mt-4 mb-0">
-							<input type="submit" name="edit_admin" class="btn btn-primary" value="Edit" />
+							<input type="submit" name="edit_admin" class="btn btn-success" value="Save" />
 						</div>
 					</form>
 
