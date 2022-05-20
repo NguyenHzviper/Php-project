@@ -243,7 +243,8 @@ include '../header.php';
                 		</div>
                 		<div class="mt-4 mb-0">
                 			<input type="hidden" name="location_rack_id" value="<?php echo $_GET['code']; ?>" />
-                			<input type="submit" name="edit_location_rack" class="btn btn-primary" value="Edit" />
+                			<input type="submit" name="edit_location_rack" class="btn btn-success" value="Save" />
+							<button class="btn btn-danger" onclick="history.back()">Cancel</button>
                 		</div>
                 	</form>
                 </div>
