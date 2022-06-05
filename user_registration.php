@@ -192,7 +192,7 @@ if(isset($_POST["register_button"]))
 
 			$mail->Port = 587;
 
-			$mail->setFrom('ducdoan.ad@gmail.com', 'NguyenPro');
+			$mail->setFrom('cloneacc26021412@gmail.com', 'Library System');
 
 			$mail->addAddress($formdata['user_email_address'], $formdata['user_name']);
 
