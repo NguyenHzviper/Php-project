@@ -61,7 +61,7 @@ if(isset($_POST["login_button"]))
 		{
 			foreach($statement->fetchAll() as $row)
 			{
-				if($row['user_status'] == 'Enable')
+				if($row['user_verification_status'] == 'Yes')
 				{
 					if($row['user_password'] == $formdata['user_password'])
 					{
@@ -75,7 +75,7 @@ if(isset($_POST["login_button"]))
 				}
 				else
 				{
-					$message = '<li>Your Account has been disabled</li>';	
+					$message = '<li>Your account is not verified, please check your email to verify!</li>';	
 				}
 			}
 		}
