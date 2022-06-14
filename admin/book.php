@@ -390,7 +390,7 @@ include '../header.php';
        			</div>
        			<div class="mt-4 mb-3 text-center">
        				<input type="hidden" name="book_id" value="<?php echo $book_row['book_id']; ?>" />
-       				<input type="submit" name="edit_book" class="btn btn-primary" value="Edit" />
+       				<input type="submit" name="edit_book" class="btn btn-success" value="Save" />
        			</div>
        		</form>
        		<script>

@@ -242,7 +242,7 @@ include '../header.php';
     					</div>
     					<div class="mt-4 mb-0">
     						<input type="hidden" name="author_id" value="<?php echo $_GET['code']; ?>" />
-    						<input type="submit" name="edit_author" class="btn btn-primary" value="Edit" />
+    						<input type="submit" name="edit_author" class="btn btn-success" value="Save" />
     					</div>
     				</form>
     			</div>

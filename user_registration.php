@@ -186,7 +186,7 @@ if(isset($_POST["register_button"]))
 
 			$mail->Username = 'cloneacc26021412@gmail.com';  //Here you can use your Gmail Email Address
 
-			$mail->Password = 'Ngoc2602';  //Here you can use your Gmail Address Password
+			$mail->Password = 'abteegwhqosabwfb';  //Here you can use your Gmail Address Password
 
 			$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
